@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="click"
     tools:context=".MainActivity">
 
     <ImageView
@@ -41,13 +42,14 @@
             app:layout_constraintHeight_percent=".7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tab_layout"
-            app:layout_constraintVertical_bias="0" />
+            app:layout_constraintVertical_bias="0"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/vie_bg"
+            android:onClick="click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

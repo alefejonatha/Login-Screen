@@ -16,6 +16,7 @@ public class IntroActivity extends AppCompatActivity {
     ImageView logo, backgraund;
     LottieAnimationView lottieAnimationView;
     static int SPLASH_SCREEN = 4800;
+    float v = 1;
 
 
 
@@ -30,10 +31,20 @@ public class IntroActivity extends AppCompatActivity {
         backgraund = findViewById(R.id.image_back);
         lottieAnimationView = findViewById(R.id.lottie);
 
-        backgraund.animate().translationY(-2800).setDuration(800).setStartDelay(4000);
-        logo.animate().translationY(1400).setDuration(800).setStartDelay(4000);
+        logo.setAlpha(v);
+        backgraund.setAlpha(v);
+        lottieAnimationView.setAlpha(v);
+
+        backgraund.animate().alpha(0).setDuration(800).setStartDelay(4000);
+        logo.animate().alpha(0).setDuration(800).setStartDelay(4000);
         lottieAnimationView.setRepeatCount(LottieDrawable.INFINITE);
-        lottieAnimationView.animate().translationY(1400).setDuration(800).setStartDelay(4000);
+        lottieAnimationView.animate().alpha(0).setDuration(800).setStartDelay(4000);
+
+
+//        backgraund.animate().translationY(-2800).setDuration(800).setStartDelay(4000);
+//        logo.animate().translationY(1400).setDuration(800).setStartDelay(4000);
+//        lottieAnimationView.setRepeatCount(LottieDrawable.INFINITE);
+//        lottieAnimationView.animate().translationY(1400).setDuration(800).setStartDelay(4000);
 
         new Handler().postDelayed(new Runnable() {
             @Override
