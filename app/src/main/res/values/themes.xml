@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LoginScreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#263238</item>
+        <item name="colorPrimaryVariant">#000a12</item>
+        <item name="colorOnPrimary">#4f5b62</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#4a148c</item>
+        <item name="colorSecondaryVariant">#12005e</item>
+        <item name="colorOnSecondary">#7c43bd</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+       <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+</resources>
